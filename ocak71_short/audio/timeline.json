@@ -1,0 +1,542 @@
+{
+ "duration": 42.74,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 3.06,
+   "text": "Eskiden kışlar ayı ısıtmak için bir düğmeye basmazdık.",
+   "words": [
+    [
+     0.0,
+     "Eskiden"
+    ],
+    [
+     0.64,
+     "kışlar"
+    ],
+    [
+     1.02,
+     "ayı"
+    ],
+    [
+     1.16,
+     "ısıtmak"
+    ],
+    [
+     1.58,
+     "için"
+    ],
+    [
+     1.9,
+     "bir"
+    ],
+    [
+     2.18,
+     "düğmeye"
+    ],
+    [
+     2.48,
+     "basmazdık."
+    ]
+   ]
+  },
+  {
+   "start": 3.24,
+   "end": 4.32,
+   "text": "Saatlerce uğraşırdık.",
+   "words": [
+    [
+     3.24,
+     "Saatlerce"
+    ],
+    [
+     3.72,
+     "uğraşırdık."
+    ]
+   ]
+  },
+  {
+   "start": 4.48,
+   "end": 6.92,
+   "text": "Doğalgaz birçok şehri ancak 2000'lerde geldi.",
+   "words": [
+    [
+     4.48,
+     "Doğalgaz"
+    ],
+    [
+     4.92,
+     "birçok"
+    ],
+    [
+     5.36,
+     "şehri"
+    ],
+    [
+     5.64,
+     "ancak"
+    ],
+    [
+     5.92,
+     "2000"
+    ],
+    [
+     6.22,
+     "'lerde"
+    ],
+    [
+     6.5,
+     "geldi."
+    ]
+   ]
+  },
+  {
+   "start": 7.07,
+   "end": 8.99,
+   "text": "Ondan önce her evin bir sobası vardı.",
+   "words": [
+    [
+     7.07,
+     "Ondan"
+    ],
+    [
+     7.31,
+     "önce"
+    ],
+    [
+     7.63,
+     "her"
+    ],
+    [
+     7.89,
+     "evin"
+    ],
+    [
+     8.11,
+     "bir"
+    ],
+    [
+     8.33,
+     "sobası"
+    ],
+    [
+     8.65,
+     "vardı."
+    ]
+   ]
+  },
+  {
+   "start": 9.37,
+   "end": 10.97,
+   "text": "Her binanında bir kömürlüğü vardı.",
+   "words": [
+    [
+     9.37,
+     "Her"
+    ],
+    [
+     9.55,
+     "binanında"
+    ],
+    [
+     10.03,
+     "bir"
+    ],
+    [
+     10.25,
+     "kömürlüğü"
+    ],
+    [
+     10.73,
+     "vardı."
+    ]
+   ]
+  },
+  {
+   "start": 11.13,
+   "end": 14.37,
+   "text": "Sonbaharda kamyonla kömür gelir, kovalarla bodruma taşınırdı.",
+   "words": [
+    [
+     11.13,
+     "Sonbaharda"
+    ],
+    [
+     11.67,
+     "kamyonla"
+    ],
+    [
+     12.13,
+     "kömür"
+    ],
+    [
+     12.45,
+     "gelir,"
+    ],
+    [
+     12.98,
+     "kovalarla"
+    ],
+    [
+     13.36,
+     "bodruma"
+    ],
+    [
+     13.76,
+     "taşınırdı."
+    ]
+   ]
+  },
+  {
+   "start": 14.59,
+   "end": 16.52,
+   "text": "Sabah evde ilk kalkan sobayı yakardı.",
+   "words": [
+    [
+     14.59,
+     "Sabah"
+    ],
+    [
+     14.93,
+     "evde"
+    ],
+    [
+     15.25,
+     "ilk"
+    ],
+    [
+     15.39,
+     "kalkan"
+    ],
+    [
+     15.71,
+     "sobayı"
+    ],
+    [
+     16.03,
+     "yakardı."
+    ]
+   ]
+  },
+  {
+   "start": 16.68,
+   "end": 19.08,
+   "text": "Önce gazete, sonra çıra, en son kömür.",
+   "words": [
+    [
+     16.68,
+     "Önce"
+    ],
+    [
+     16.92,
+     "gazete,"
+    ],
+    [
+     17.64,
+     "sonra"
+    ],
+    [
+     17.86,
+     "çıra,"
+    ],
+    [
+     18.4,
+     "en"
+    ],
+    [
+     18.62,
+     "son"
+    ],
+    [
+     18.74,
+     "kömür."
+    ]
+   ]
+  },
+  {
+   "start": 19.3,
+   "end": 21.78,
+   "text": "Odayı duman sarmasın diye birde pencere açılırdı.",
+   "words": [
+    [
+     19.3,
+     "Odayı"
+    ],
+    [
+     19.58,
+     "duman"
+    ],
+    [
+     19.78,
+     "sarmasın"
+    ],
+    [
+     20.36,
+     "diye"
+    ],
+    [
+     20.54,
+     "birde"
+    ],
+    [
+     20.86,
+     "pencere"
+    ],
+    [
+     21.24,
+     "açılırdı."
+    ]
+   ]
+  },
+  {
+   "start": 22.01,
+   "end": 23.89,
+   "text": "Sobanın üstünde hep çaydanlık kaynardı.",
+   "words": [
+    [
+     22.01,
+     "Sobanın"
+    ],
+    [
+     22.39,
+     "üstünde"
+    ],
+    [
+     22.69,
+     "hep"
+    ],
+    [
+     22.89,
+     "çaydanlık"
+    ],
+    [
+     23.33,
+     "kaynardı."
+    ]
+   ]
+  },
+  {
+   "start": 24.13,
+   "end": 25.15,
+   "text": "Kestane pişerdi.",
+   "words": [
+    [
+     24.13,
+     "Kestane"
+    ],
+    [
+     24.53,
+     "pişerdi."
+    ]
+   ]
+  },
+  {
+   "start": 25.31,
+   "end": 26.51,
+   "text": "Portakal kabuğu kokardı.",
+   "words": [
+    [
+     25.31,
+     "Portakal"
+    ],
+    [
+     25.73,
+     "kabuğu"
+    ],
+    [
+     26.05,
+     "kokardı."
+    ]
+   ]
+  },
+  {
+   "start": 26.51,
+   "end": 28.92,
+   "text": "Islak çöraplarda sandalyede kururdu.",
+   "words": [
+    [
+     26.51,
+     "Islak"
+    ],
+    [
+     27.01,
+     "çöraplarda"
+    ],
+    [
+     27.76,
+     "sandalyede"
+    ],
+    [
+     28.44,
+     "kururdu."
+    ]
+   ]
+  },
+  {
+   "start": 29.16,
+   "end": 31.61,
+   "text": "Akşamları herkes sobanın olduğu odada toplanırdı.",
+   "words": [
+    [
+     29.16,
+     "Akşamları"
+    ],
+    [
+     29.64,
+     "herkes"
+    ],
+    [
+     29.98,
+     "sobanın"
+    ],
+    [
+     30.48,
+     "olduğu"
+    ],
+    [
+     30.62,
+     "odada"
+    ],
+    [
+     30.94,
+     "toplanırdı."
+    ]
+   ]
+  },
+  {
+   "start": 31.85,
+   "end": 33.7,
+   "text": "Çünkü evin geri kalanı buz gibiydi.",
+   "words": [
+    [
+     31.85,
+     "Çünkü"
+    ],
+    [
+     32.19,
+     "evin"
+    ],
+    [
+     32.61,
+     "geri"
+    ],
+    [
+     32.81,
+     "kalanı"
+    ],
+    [
+     33.03,
+     "buz"
+    ],
+    [
+     33.33,
+     "gibiydi."
+    ]
+   ]
+  },
+  {
+   "start": 33.88,
+   "end": 35.35,
+   "text": "Gülü dökmek, sobayı çatmak.",
+   "words": [
+    [
+     33.88,
+     "Gülü"
+    ],
+    [
+     34.1,
+     "dökmek,"
+    ],
+    [
+     34.74,
+     "sobayı"
+    ],
+    [
+     34.94,
+     "çatmak."
+    ]
+   ]
+  },
+  {
+   "start": 35.59,
+   "end": 37.13,
+   "text": "Sizin evde bu kimin göreviydi?",
+   "words": [
+    [
+     35.59,
+     "Sizin"
+    ],
+    [
+     35.71,
+     "evde"
+    ],
+    [
+     36.09,
+     "bu"
+    ],
+    [
+     36.27,
+     "kimin"
+    ],
+    [
+     36.55,
+     "göreviydi?"
+    ]
+   ]
+  },
+  {
+   "start": 37.25,
+   "end": 38.04,
+   "text": "Yorumlara yazın.",
+   "words": [
+    [
+     37.25,
+     "Yorumlara"
+    ],
+    [
+     37.65,
+     "yazın."
+    ]
+   ]
+  },
+  {
+   "start": 38.16,
+   "end": 41.04,
+   "text": "Eskiden böyleydi serisinin devamı için takip etmeyi unutmayın.",
+   "words": [
+    [
+     38.16,
+     "Eskiden"
+    ],
+    [
+     38.54,
+     "böyleydi"
+    ],
+    [
+     38.96,
+     "serisinin"
+    ],
+    [
+     39.5,
+     "devamı"
+    ],
+    [
+     39.82,
+     "için"
+    ],
+    [
+     40.02,
+     "takip"
+    ],
+    [
+     40.38,
+     "etmeyi"
+    ],
+    [
+     40.7,
+     "unutmayın."
+    ]
+   ]
+  }
+ ]
+}
