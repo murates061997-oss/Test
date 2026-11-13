@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dad Dogs Again</title>
+<style>
+  @font-face{font-family:PatrickHand;src:url(fonts/PatrickHand.ttf)}
+  @font-face{font-family:Fredoka;src:url(fonts/Fredoka.ttf)}
+  html,body{margin:0;height:100%;background:#111}
+  body{display:flex;align-items:center;justify-content:center;overflow:hidden}
+  canvas{width:min(100vw,calc(100vh*16/9));aspect-ratio:16/9;display:block}
+  #info{position:fixed;left:8px;bottom:8px;color:#bbb;font:13px sans-serif}
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<div id="info"></div>
+<script src="lib.js"></script>
+<script src="audio/captions.js"></script>
+<script>
+const cv = document.getElementById('c'); ctx = cv.getContext('2d');
+const buf = document.createElement('canvas'); buf.width = W; buf.height = H;
+const SC = [];
+function scene(a, b, f) { SC.push({ a, b, f }); }
+const pop = (T, a, d = .45) => pr(T, a, a + d);
+// yavaş kamera: z0->z1 yakınlaştırma, (fx,fy) odak
+function cam(T, a, b, z0, z1, fx = W / 2, fy = H / 2) { const z = lerp(z0, z1, eio(pr(T, a, b))); ctx.translate(fx, fy); ctx.scale(z, z); ctx.translate(-fx, -fy); }
+</script>
+<script src="scenes1.js"></script>
+<script src="scenes2.js"></script>
+<script src="scenes3.js"></script>
+<script>
+let CAPS = [];
+const DUR = 593;
+const XF = .45;   // sahne geçişi (çapraz geçiş) süresi
+function drawScene(i, T) { ctx.save(); SC[i].f(T); ctx.restore(); }
+function captions(T) {
+  const c = CAPS.find(c => T >= c.a && T < c.b); if (!c) return;
+  ctx.save(); ctx.font = `500 40px ${ROUND}`; const w = ctx.measureText(c.text).width + 56;
+  const a = Math.min(pr(T, c.a, c.a + .12), pr(c.b, T, T + .12) * 0 + 1);
+  ctx.globalAlpha = a; rr(W / 2 - w / 2, H - 112, w, 66, 20); ctx.fillStyle = 'rgba(32,26,24,.78)'; ctx.fill();
+  ctx.fillStyle = '#fffaf0'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(c.text, W / 2, H - 78); ctx.restore();
+}
+function render(T) {
+  ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+  let i = SC.findIndex(s => T >= s.a && T < s.b); if (i < 0) i = T < SC[0].a ? 0 : SC.length - 1;
+  ctx.fillStyle = CREAM; ctx.fillRect(0, 0, W, H);
+  const lt = T - SC[i].a;
+  if (i > 0 && lt < XF) {
+    drawScene(i - 1, T);
+    const main = ctx; ctx = buf.getContext('2d'); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = CREAM; ctx.fillRect(0, 0, W, H);
+    drawScene(i, T); ctx = main; ctx.save(); ctx.globalAlpha = eio(lt / XF); ctx.drawImage(buf, 0, 0); ctx.restore();
+  } else drawScene(i, T);
+  grain(.06); vignette(.2);
+  if (SHOW_CAPS) captions(T);
+}
+let SHOW_CAPS = true;
+const qs = new URLSearchParams(location.search);
+if (qs.has('nocaps')) SHOW_CAPS = false;
+window.render = render; window.DUR = DUR; window.cv = cv;
+Promise.all([document.fonts.load('40px PatrickHand'), document.fonts.load('600 40px Fredoka'), document.fonts.load('500 40px Fredoka'),
+]).then(() => { CAPS = window.CAPTIONS || [];
+  if (qs.has('render')) { render(0); window.READY = true; }
+  else { let start = performance.now() - (+qs.get('t') || 0) * 1000, paused = false, pt = 0; const info = document.getElementById('info');
+    const au = new Audio('audio/voice.mp3'); au.currentTime = +qs.get('t') || 0;
+    cv.onclick = () => { if (paused) { start = performance.now() - pt * 1000; au.currentTime = pt; au.play(); } else au.pause(); paused = !paused; };
+    au.play().catch(() => {});
+    (function loop() { if (!paused) { pt = ((performance.now() - start) / 1000) % DUR; render(pt); info.textContent = pt.toFixed(1) + ' s (click = pause)'; } requestAnimationFrame(loop); })(); }
+});
+</script>
+</body>
+</html>
